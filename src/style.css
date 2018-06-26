@@ -4,10 +4,6 @@
     margin: 10%;
 }
 
-.top-buttoms {
-    margin: 5%;
-    text-align: center;
-}
 
 .footer {
     margin: 6%;
@@ -21,6 +17,7 @@ body {
 
 #map {
     border-radius: 8%;
+    text-align: center !important;
 }
 
 .btn-warning {
@@ -39,4 +36,8 @@ body {
 
 #apply-buttom{
     margin-top: 10px;
+}
+
+.main {
+    margin-top: 6%;
 }
