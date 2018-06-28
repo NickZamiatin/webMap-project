@@ -1,7 +1,7 @@
 <!-- ![](.) -->
 
 
-# Frontend Project WbMap
+# Frontend Project WebMap
 Web map where user can find place with they need near him. The main idea works with google maps, location and see how its works for website. I want to grab API of diferen place and send to the map on main part of my Web page
 
 
@@ -24,7 +24,7 @@ yarn deploy  #   means npm run build && firebase deploy
 
 ```
 
-# WebMAp 
+# WebMap 
 ![](./WebMap.png)
 
 [WebMAp](https://webmap-69d43.firebaseapp.com/)
