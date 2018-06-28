@@ -3,7 +3,6 @@ import "./style.css"
 
 // console.log('hello world ')
 
-
 const user = document.querySelector('#apply-buttom');
 const searchInput = document.querySelector('#searchMap');
 var myLatlng;
@@ -14,7 +13,7 @@ user.addEventListener('click', (event) => {
     event.preventDefault();
     const searchTerm = searchInput.value
 
-    let userInputAddress = `https://maps.googleapis.com/maps/api/geocode/json?address=${searchTerm}&key=AIzaSyAzk29EWio3H7I6UvJ0gWJ8rwZeK4Nh8yU`
+    let userInputAddress = `https://maps.googleapis.com/maps/api/geocode/json?address=${searchTerm}&key=AIzaSyB386cmYAo7WGgHqAyzWMBTBBDCAr6ynDQ`
     myLatlng = userInputAddress
 
     fetch(userInputAddress)
@@ -35,38 +34,31 @@ user.addEventListener('click', (event) => {
 
                     for (let i = 0; i < icon.length; i++) {
                         console.log(icon[i].geometry.location)
-                    console.log(icon[i].icon)
+                        console.log(icon[i].icon)
                         new google.maps.Marker({
-                            
+
                             position: icon[i].geometry.location,
                             map: map,
-                            icon : icon[i].icon,
-                           size : new google.maps.Size(20, 20)
+                            icon: icon[i].icon,
+                            size: new google.maps.Size(20, 25)
 
                         });
                     }
-
-
                 })
 
-                console.log(myLatlng)
+            console.log(myLatlng)
             console.log(userCheckBoxURL)
         })
         .catch(error => console.error(error))
 
     console.log(searchTerm)
-        console.log(myLatlng)
-
+    console.log(myLatlng)
 })
-
-
-
 const buttonCheck = document.querySelector('.top_buttoms')
 
 buttonCheck.addEventListener('click', (event) => {
     const checkValue = event.target.id
 })
-
 
 function letsSeeIfChec() {
     let types = [];
@@ -85,7 +77,6 @@ function letsSeeIfChec() {
     return types.join(',')
 }
 
-
 // https: //maps.googleapis.com/maps/api/place/nearbysearch/json?
 // location=-33.8670522,151.1957362
 // &radius=1500&  
@@ -93,15 +84,14 @@ function letsSeeIfChec() {
 // &keyword=cruise& /// not need 
 // key=AIzaSyAzk29EWio3H7I6UvJ0gWJ8rwZeK4Nh8yU // my key 
 // add pins to map
+
 function initMap() {
     // The location of myLatlng
     myLatlng = {
         lat: 40.7831, //{  lat and lng from user location }
         lng: -73.9712
     };
-
     console.log(myLatlng)
-
     map = new google.maps.Map(
         document.getElementById('map'), {
             zoom: 14,
@@ -113,11 +103,6 @@ function initMap() {
         map: map,
     });
 
-
 }
-
-
-
-
 
 initMap();
