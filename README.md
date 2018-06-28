@@ -2,7 +2,7 @@
 
 
 # Frontend Project WebMap
-Web map where user can find place with they need near him. The main idea works with google maps, location and see how its works for website. I want to grab API of diferen place and send to the map on main part of my Web page
+Web map is an app where the user can find places they need near them. The main idea works with google maps, location and allowed me to explore how to use google maps and location in a web app. You can filter by restaurants , night clubs and fast food. The search results will appear on the map as markers.
 
 
 ## Setup
