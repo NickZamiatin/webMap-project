@@ -2,7 +2,7 @@
 
 
 # Frontend Project WebMap
-Web map is an app where the user can find places they need near them. The main idea works with google maps, location and allowed me to explore how to use google maps and location in a web app. You can filter by restaurants , night clubs and fast food. The search results will appear on the map as markers.
+Web map is an app where the user can find places they need near them. The main idea works with google maps, location and allowed me to explore how to use google maps and location in a web app. You can filter by restaurants , night clubs and  bars . The search results will appear on the map as markers.
 
 
 ## Setup
